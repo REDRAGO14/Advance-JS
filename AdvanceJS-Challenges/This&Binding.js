@@ -1,4 +1,4 @@
-const Person = {
+/* const Person = {
     name: "dagim",
     introduce: function(){return console.log(`hello ${this.name}`);
     }
@@ -23,4 +23,15 @@ const user = {
   }
 };
 
-user.sayHi();
+user.sayHi(); */
+
+
+function introduce(){
+    return `hi my name is ${this.name}`
+}
+
+const p1 = {name: "dagim"}
+const p2 = {name: "redragon"}
+
+introduce.call(p1)
+introduce.call(p2)
