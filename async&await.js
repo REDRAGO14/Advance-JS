@@ -1,7 +1,7 @@
 function fetchData(){
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            let success = false
+            let success = true
         if (success){
             resolve({name: "dagim", age: 15})
         }else{
@@ -11,6 +11,11 @@ function fetchData(){
         
     })
 }
+
+/* fetchData()
+    .then((value) => console.log(value))
+    .catch((error) => console.log(error)) */
+
 
 async function getfetchedData(){
     console.log("data is being fetched........");
