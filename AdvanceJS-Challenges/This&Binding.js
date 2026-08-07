@@ -35,3 +35,12 @@ const p2 = {name: "redragon"}
 
 introduce.call(p1)
 introduce.call(p2)
+
+
+function sum(a,b){
+    return console.log(`Sum:${ a+b * this.multiplyer}`);
+}
+let context1 = {multiplyer: 2}
+let context2 = {multiplyer: 5}
+sum.apply(context1,[4,2])
+sum.apply(context2,[4,2])
