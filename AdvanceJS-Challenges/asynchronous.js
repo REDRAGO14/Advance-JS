@@ -10,7 +10,7 @@
 simulateAsyncTask()
  */
 
-function simulateMultipleTasks(){
+/* function simulateMultipleTasks(){
     setTimeout(() => {
         console.log("Task 1 finished");
         
@@ -25,4 +25,13 @@ function simulateMultipleTasks(){
     }, 3000);
 }
 
-simulateMultipleTasks()
+simulateMultipleTasks() */
+
+function fetchDataWithCallback(callback) {
+  setTimeout(() => {
+    const data = 'Fetched data';
+    callback(data);
+  }, 2000);
+}
+fetchDataWithCallback((data)=>{console.log(data);
+})
