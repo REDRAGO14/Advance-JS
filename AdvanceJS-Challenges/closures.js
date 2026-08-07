@@ -8,3 +8,5 @@ function createCounter(){
 
 let increment = createCounter()
 console.log(increment());
+
+
